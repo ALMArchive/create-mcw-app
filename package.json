@@ -1,0 +1,34 @@
+{
+  "name": "create-mcw-app",
+  "version": "0.1.0",
+  "description": "create-mcw-app is an node cli tool to create Material Component Web application from a project template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALMaclaine/create-mcw-app.git"
+  },
+  "keywords": [
+    "MCW",
+    "Material",
+    "Components",
+    "Web",
+    "Design",
+    "Create",
+    "App",
+    "Template"
+  ],
+  "author": "Alessandro Maclaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALMaclaine/create-mcw-app/issues"
+  },
+  "homepage": "https://github.com/ALMaclaine/create-mcw-app#readme",
+  "dependencies": {
+    "command-exists": "^1.2.7",
+    "fs-extra": "^7.0.0",
+    "opn": "^5.3.0"
+  }
+}
