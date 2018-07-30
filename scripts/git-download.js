@@ -1,13 +1,26 @@
 const { sync: commandExists } = require('command-exists');
 const fs = require("fs-extra");
 
-export default function gitDownload(appName) {
+module.exports = function gitDownload(appName) {
   if(!appName) {
-    throw new Error("Must pass argument to create-mwc-app init");
+    console.warn("Must pass argument to create-mwc-app init.");
+    process.exit();
+  }
+
+  if(fs.existsSync(appName)) {
+    console.warn(`Directory: ${appName} already exists.`);
+    process.exit();
+  }
+
+  if (fs.existsSync("mcw-app-template")) {
+    console.warn(`Directory: mcw-app-template already exists.`);
+    console.log("Please delete or work from a different directory.");
+    process.exit();
   }
   
   if (!commandExists('git')) {
-    throw new Error("git must be installed and on the cli path.");
+    console.warn(`git must be installed and on the cli path.`);
+    process.exit();
   }
   const { execSync } = require('child_process');
   const repo = "https://github.com/ALMaclaine/mcw-app-template";
@@ -15,4 +28,3 @@ export default function gitDownload(appName) {
   fs.removeSync("mcw-app-template/.git");
   fs.moveSync("mcw-app-template", appName);
 }
-
