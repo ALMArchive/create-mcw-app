@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const arg1 = process.argv[2] && process.argv[2].toLowerCase();
 const arg2 = process.argv[3] && process.argv[3].toLowerCase();
 
