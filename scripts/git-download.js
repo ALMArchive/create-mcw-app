@@ -27,4 +27,5 @@ module.exports = function gitDownload(appName) {
   execSync(`git clone ${repo}`);
   fs.removeSync("mcw-app-template/.git");
   fs.moveSync("mcw-app-template", appName);
+  console.log(`Finished creating app: ${appName}`);
 }
