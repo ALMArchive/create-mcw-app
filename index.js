@@ -7,7 +7,8 @@ const funcs = {
   "npm":  require("./scripts/npm-comp.js"),
   "list": require("./scripts/list-comps.js"),
   "open": require("./scripts/open-comp.js"),
-  "comp": require("./scripts/git-comp.js")
+  "comp": require("./scripts/git-comp.js"),
+  "demos": require("./scripts/demos-comp.js")
 }
 
 if(funcs[arg1]) {
