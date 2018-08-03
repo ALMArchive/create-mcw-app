@@ -1,8 +1,6 @@
 const comps = require("./comps.js");
 
-
 module.exports = function getComp(arg) {
-  let f;
   if (comps.indexOf(arg) !== -1) {
     const prefixGIT = "https://github.com/material-components/material-components-web/tree/master/packages/mdc-";
     console.log(`${prefixGIT}${arg}`);

@@ -1,7 +1,6 @@
 const comps = require("./comps.js");
 
 module.exports = function npmComp(arg) {
-  let f;
   if (comps.indexOf(arg) !== -1) {
     const prefixNPM = "@material/";
     console.log(`${prefixNPM}${arg}`);
