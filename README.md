@@ -13,6 +13,7 @@ create-mcw-app is an node cli tool to create Material Component Web application 
 3. list
 4. open
 5. comp
+6. demos
 
 ### init
 Initializes a new mcw application by cloning a git repo. The app directory will be named what is passed to arg2.
@@ -35,7 +36,7 @@ create-mcw-app comp <comp>
 // https://github.com/material-components/material-components-web/tree/master/packages/mdc-<comp>
 ```
 
-### comp
+### open
 opens the browser to the components github repo.
 
 ```bash
@@ -44,6 +45,23 @@ create-mcw-app open <comp>
 
 ### list
 Lists all the currently finished, non-deprecated Material Web Components.
+
+```bash
+create-mcw-app open <comp>
+```
+
+### demos
+Opens either the demo repo page, the hosted set of demos or the individual package demo pages.
+
+```bash
+create-mcw-app demos <arg2>
+```
+
+arg2 is one of `hosted`, `repo` or a `comp` name.
+
+- `hosted` - opens the hosted page of demos
+- `repo`   - opens the repo page for the demos
+- `comp`   - opens up that comps demo page
 
 ## Valid Components
 - animation
