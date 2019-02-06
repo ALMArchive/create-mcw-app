@@ -1,6 +1,6 @@
 {
   "name": "create-mcw-app",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "create-mcw-app is an node cli tool to create Material Component Web application from a project template.",
   "main": "index.js",
   "bin": {
