@@ -1,5 +1,6 @@
-const { sync: commandExists } = require('command-exists');
 const fs = require("fs-extra");
+const path = require("path");
+const { sync: commandExists } = require('command-exists');
 
 module.exports = function gitDownload(appName) {
   if(!appName) {
@@ -25,6 +26,9 @@ module.exports = function gitDownload(appName) {
   const { execSync } = require('child_process');
   const repo = "https://github.com/ALMaclaine/mcw-app-template";
   execSync(`git clone ${repo}`);
+  const pkg = require(`${process.cwd()}/mcw-app-template/package.json`);
+  pkg.name = appName;
+  fs.writeFileSync(`${process.cwd()}/mcw-app-template/package.json`, JSON.stringify(pkg, null, 4));
   fs.removeSync("mcw-app-template/.git");
   fs.moveSync("mcw-app-template", appName);
   console.log(`Finished creating app, please change your package.json details: ${appName}`);
