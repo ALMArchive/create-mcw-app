@@ -1,6 +1,6 @@
 {
   "name": "create-mcw-app",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "create-mcw-app is an node cli tool to create Material Component Web application from a project template.",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/almtechhub/create-mcw-app.git"
+    "url": "git+https://github.com/ALMArchive/create-mcw-app.git"
   },
   "keywords": [
     "MCW",
@@ -26,9 +26,9 @@
   "author": "Alessandro Maclaine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/almtechhub/create-mcw-app/issues"
+    "url": "https://github.com/ALMArchive/create-mcw-app/issues"
   },
-  "homepage": "https://github.com/almtechhub/create-mcw-app#readme",
+  "homepage": "https://github.com/ALMArchive/create-mcw-app#readme",
   "dependencies": {
     "command-exists": "^1.2.7",
     "fs-extra": "^7.0.0",
